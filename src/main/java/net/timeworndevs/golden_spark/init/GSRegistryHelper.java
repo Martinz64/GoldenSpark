@@ -19,14 +19,14 @@ public class GSRegistryHelper {
         return register(name, item);
     }
 
-    public static <I extends Item> I register(String name, I item) {
-        if (item instanceof BlockItem blockItem) {
+    public static <I extends Item> I register(String name, I item){
+        if(item instanceof BlockItem blockItem) {
             blockItem.appendBlocks(Item.BLOCK_ITEMS, blockItem);
         }
         return Registry.register(Registries.ITEM, Identifier.of(GSMain.MODID, name), item);
     }
 
-    public static <B extends Block> B register(String name, B block) {
+    public static <B extends Block> B register(String name, B block){
         return Registry.register(Registries.BLOCK, Identifier.of(GSMain.MODID, name), block);
     }
 
