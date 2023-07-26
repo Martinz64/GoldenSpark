@@ -10,6 +10,7 @@ import net.timeworndevs.golden_spark.block_entity.EndlessSourceBlockEntity;
 
 public class GSBlockEntityTypes {
 
+    //This BlockEntity type is for a creative power cell
     public static BlockEntityType<EndlessSourceBlockEntity> ENDLESS_SOURCE_TYPE;
 
     public static void init() {
