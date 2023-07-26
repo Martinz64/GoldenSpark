@@ -1,7 +1,9 @@
 {
   "item.golden_spark.spiremetal_ingot": "Spiremetal Ingot",
-
+  "item.golden_spark.tonitrium_ingot": "Tonitrium Ingot",
   "block.golden_spark.spiremetal_block": "Block Of Spiremetal",
+  "block.golden_spark.tonitrium_block": "Block Of Tonitrium",
+  "block.golden_spark.stormglass": "Stormglass",
 
   "gs.main": "Golden Spark Main Items"
 }

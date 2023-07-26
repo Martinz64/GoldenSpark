@@ -14,12 +14,16 @@ import net.timeworndevs.golden_spark.GSMain;
 
 public class GSItemGroups {
 
-    //private static final RegistryKey<ItemGroup> GS_MAIN = RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(GSMain.MODID, "gs_main"));
+    private static final RegistryKey<ItemGroup> GS_MAIN = RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(GSMain.MODID, "gs_main"));
 
     public static void init() {
-        //Registry.register(Registries.ITEM_GROUP, GS_MAIN, FabricItemGroup.builder().displayName(Text.translatable("gs.main")).icon(() -> new ItemStack(GSItems.SPIREMETAL_INGOT)).entries(((context, entries) -> {
-            //entries.add(GSItems.SPIREMETAL_INGOT);
-            //entries.add(GSItems.SPIREMETAL_BLOCK.asItem());
-        //})).build());
+        Registry.register(Registries.ITEM_GROUP, GS_MAIN, FabricItemGroup.builder().displayName(Text.translatable("gs.main")).icon(() -> new ItemStack(GSItems.GS_ICON)).entries(((context, entries) -> {
+            entries.add(GSItems.SPIREMETAL_INGOT);
+            entries.add(GSItems.SPIREMETAL_BLOCK);
+            entries.add(GSItems.TONITRIUM_INGOT);;
+            entries.add(GSItems.TONITRIUM_BLOCK);
+            entries.add(GSItems.STORMGLASS);
+            entries.add(GSItems.ENDLESS_SOURCE);
+        })).build());
     }
 }

@@ -1,24 +1,32 @@
 package net.timeworndevs.golden_spark.init;
 
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
+import net.timeworndevs.golden_spark.GSMain;
 
 public class GSItems {
 
-    public static Item SPIREMETAL_INGOT;
+    public static final Item GS_ICON = new Item(new Item.Settings());
+    public static final Item SPIREMETAL_INGOT = new Item(new Item.Settings());
+    public static final Item TONITRIUM_INGOT = new Item(new Item.Settings());
 
-    public static BlockItem SPIREMETAL_BLOCK;
+    public static final BlockItem SPIREMETAL_BLOCK = new BlockItem(GSBlocks.SPIREMETAL_BLOCK, new Item.Settings());
+    public static final BlockItem TONITRIUM_BLOCK = new BlockItem(GSBlocks.TONITRIUM_BLOCK, new Item.Settings());
+    public static final BlockItem STORMGLASS = new BlockItem(GSBlocks.STORMGLASS, new Item.Settings());
+
+    public static final BlockItem ENDLESS_SOURCE = new BlockItem(GSBlocks.ENDLESS_SOURCE, new Item.Settings());
 
     public static void init() {
-        SPIREMETAL_INGOT = GSRegistryHelper.register("spiremetal_ingot", new Item(new Item.Settings()));
-        SPIREMETAL_BLOCK = GSRegistryHelper.register("spiremetal_block", new BlockItem(GSBlocks.SPIREMETAL_BLOCK, new Item.Settings()));
-        tempItemGroups();
-    }
-
-    public static void tempItemGroups() {
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(content -> {content.add(SPIREMETAL_INGOT);});
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(content -> {content.add(SPIREMETAL_BLOCK);});
+        Registry.register(Registries.ITEM, new Identifier(GSMain.MODID, "butter_spark"), GS_ICON);
+        Registry.register(Registries.ITEM, new Identifier(GSMain.MODID, "spiremetal_ingot"), SPIREMETAL_INGOT);
+        Registry.register(Registries.ITEM, new Identifier(GSMain.MODID, "tonitrium_ingot"), TONITRIUM_INGOT);
+        Registry.register(Registries.ITEM, new Identifier(GSMain.MODID, "spiremetal_block"), SPIREMETAL_BLOCK);
+        Registry.register(Registries.ITEM, new Identifier(GSMain.MODID, "tonitrium_block"), TONITRIUM_BLOCK);
+        Registry.register(Registries.ITEM, new Identifier(GSMain.MODID, "stormglass"), STORMGLASS);
+        Registry.register(Registries.ITEM, new Identifier(GSMain.MODID, "endless_source"), ENDLESS_SOURCE);
     }
 }
