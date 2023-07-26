@@ -7,6 +7,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.timeworndevs.golden_spark.GSMain;
 import net.timeworndevs.golden_spark.block_entity.EndlessSourceBlockEntity;
+import team.reborn.energy.api.base.SimpleEnergyStorage;
 
 public class GSBlockEntityTypes {
 

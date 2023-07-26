@@ -25,5 +25,4 @@ public class EndlessSourceBlockEntity extends BlockEntity {
             markDirty();
         }
     }
-
 }
