@@ -8,7 +8,7 @@ import net.minecraft.util.Identifier;
 import net.timeworndevs.golden_spark.GSMain;
 import net.timeworndevs.golden_spark.block_entity.EndlessSourceBlockEntity;
 
-public class GSBockEntityTypes {
+public class GSBlockEntityTypes {
 
     public static BlockEntityType<EndlessSourceBlockEntity> ENDLESS_SOURCE_TYPE;
 
