@@ -12,7 +12,7 @@ public class EndlessSourceBlockEntity extends BlockEntity {
         super(GSBlockEntityTypes.ENDLESS_SOURCE_TYPE, pos, state);
     }
 
-    public final SimpleEnergyStorage energyStorage = new SimpleEnergyStorage(100, 100, 100) {
+    public final SimpleEnergyStorage energyStorage = new SimpleEnergyStorage(100000000, 100000000, 100000000) {
         @Override
         protected void onFinalCommit() {
             markDirty();
@@ -25,5 +25,5 @@ public class EndlessSourceBlockEntity extends BlockEntity {
             markDirty();
         }
     }
-    
+
 }

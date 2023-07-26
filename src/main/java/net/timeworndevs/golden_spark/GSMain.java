@@ -1,6 +1,7 @@
 package net.timeworndevs.golden_spark;
 
 import net.fabricmc.api.ModInitializer;
+import net.timeworndevs.golden_spark.init.GSBlockEntityTypes;
 import net.timeworndevs.golden_spark.init.GSBlocks;
 import net.timeworndevs.golden_spark.init.GSItemGroups;
 import net.timeworndevs.golden_spark.init.GSItems;
@@ -18,5 +19,6 @@ public class GSMain implements ModInitializer {
 		GSItems.init();
 		GSBlocks.init();
 		GSItemGroups.init();
+		GSBlockEntityTypes.init();
 	}
 }
