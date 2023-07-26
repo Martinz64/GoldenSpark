@@ -6,7 +6,7 @@ import net.minecraft.block.BlockWithEntity;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.util.math.BlockPos;
 import net.timeworndevs.golden_spark.block_entity.EndlessSourceBlockEntity;
-import net.timeworndevs.golden_spark.init.GSBLockEntityTypes;
+import net.timeworndevs.golden_spark.init.GSBockEntityTypes;
 import org.jetbrains.annotations.Nullable;
 
 public class EndlessSourceBlock extends BlockWithEntity {
@@ -19,7 +19,7 @@ public class EndlessSourceBlock extends BlockWithEntity {
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new EndlessSourceBlockEntity(GSBLockEntityTypes.ENDLESS_SOURCE_TYPE, pos, state);
+        return new EndlessSourceBlockEntity(GSBockEntityTypes.ENDLESS_SOURCE_TYPE, pos, state);
     }
 
     @Override
