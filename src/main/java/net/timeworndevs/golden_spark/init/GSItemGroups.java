@@ -23,7 +23,9 @@ public class GSItemGroups {
             entries.add(GSItems.TONITRIUM_INGOT);;
             entries.add(GSItems.TONITRIUM_BLOCK);
             entries.add(GSItems.STORMGLASS);
-            entries.add(GSItems.ENDLESS_SOURCE);
+            entries.add(GSItems.MAGNET_COIL);
+            entries.add(GSItems.SPIREMETAL_PLATING);
+            //entries.add(GSItems.ENDLESS_SOURCE);
         })).build());
     }
 }
