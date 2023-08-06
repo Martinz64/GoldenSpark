@@ -21,6 +21,7 @@ public class GSBlocks {
     //Machine component blocks
     public static final PillarBlock MAGNET_COIL = new PillarBlock(FabricBlockSettings.of().mapColor(MapColor.GOLD).sounds(BlockSoundGroup.NETHERITE).requiresTool().strength(5.0F, 6.0F));
     public static final Block SPIREMETAL_PLATING = new Block(FabricBlockSettings.of().mapColor(MapColor.GOLD).sounds(BlockSoundGroup.COPPER).requiresTool().strength(5.0F, 6.0F));
+    public static final Block TONITRIUM_PLATING = new Block(FabricBlockSettings.of().mapColor(MapColor.DARK_AQUA).sounds(BlockSoundGroup.NETHERITE).requiresTool().strength(5.0F, 6.0F));
     public static final Block TEMP_IO = new Block(FabricBlockSettings.of().mapColor(MapColor.GOLD).sounds(BlockSoundGroup.COPPER).requiresTool().strength(5.0F, 6.0F));
     public static final Block TEMP_POWER_IO = new Block(FabricBlockSettings.of().mapColor(MapColor.GOLD).sounds(BlockSoundGroup.COPPER).requiresTool().strength(5.0F, 6.0F));
     //Misc blocks
@@ -32,6 +33,7 @@ public class GSBlocks {
         Registry.register(Registries.BLOCK, new Identifier(GSMain.MODID, "stormglass"), STORMGLASS);
         Registry.register(Registries.BLOCK, new Identifier(GSMain.MODID, "magnet_coil"), MAGNET_COIL);
         Registry.register(Registries.BLOCK, new Identifier(GSMain.MODID, "spiremetal_plating"), SPIREMETAL_PLATING);
+        Registry.register(Registries.BLOCK, new Identifier(GSMain.MODID, "tonitrium_plating"), TONITRIUM_PLATING);
         Registry.register(Registries.BLOCK, new Identifier(GSMain.MODID, "temp_io"), TEMP_IO);
         Registry.register(Registries.BLOCK, new Identifier(GSMain.MODID, "temp_power_io"), TEMP_POWER_IO);
         Registry.register(Registries.BLOCK, new Identifier(GSMain.MODID, "endless_source"), ENDLESS_SOURCE);

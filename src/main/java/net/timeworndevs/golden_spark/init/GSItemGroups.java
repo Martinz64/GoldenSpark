@@ -20,11 +20,12 @@ public class GSItemGroups {
         Registry.register(Registries.ITEM_GROUP, GS_MAIN, FabricItemGroup.builder().displayName(Text.translatable("gs.main")).icon(() -> new ItemStack(GSItems.GS_ICON)).entries(((context, entries) -> {
             entries.add(GSItems.SPIREMETAL_INGOT);
             entries.add(GSItems.SPIREMETAL_BLOCK);
-            entries.add(GSItems.TONITRIUM_INGOT);;
+            entries.add(GSItems.SPIREMETAL_PLATING);
+            entries.add(GSItems.TONITRIUM_INGOT);
             entries.add(GSItems.TONITRIUM_BLOCK);
+            entries.add(GSItems.TONITRIUM_PLATING);
             entries.add(GSItems.STORMGLASS);
             entries.add(GSItems.MAGNET_COIL);
-            entries.add(GSItems.SPIREMETAL_PLATING);
             //entries.add(GSItems.ENDLESS_SOURCE);
         })).build());
     }
