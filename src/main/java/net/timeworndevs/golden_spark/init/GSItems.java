@@ -28,6 +28,7 @@ public class GSItems {
 
 
     public static final BlockItem ENDLESS_SOURCE = new BlockItem(GSBlocks.ENDLESS_SOURCE, new Item.Settings());
+    public static final BlockItem BOYKISSER = new BlockItem(GSBlocks.BOYKISSER, new Item.Settings());
 
     public static void init() {
         Registry.register(Registries.ITEM, new Identifier(GSMain.MODID, "butter_spark"), GS_ICON);
@@ -44,5 +45,6 @@ public class GSItems {
         Registry.register(Registries.ITEM, new Identifier(GSMain.MODID, "temp_io"), TEMP_IO);
         Registry.register(Registries.ITEM, new Identifier(GSMain.MODID, "temp_power_io"), TEMP_POWER_IO);
         Registry.register(Registries.ITEM, new Identifier(GSMain.MODID, "endless_source"), ENDLESS_SOURCE);
+        Registry.register(Registries.ITEM, new Identifier(GSMain.MODID, "boykisser"), BOYKISSER);
     }
 }

@@ -27,6 +27,7 @@ public class GSBlocks {
     public static final Block TEMP_POWER_IO = new Block(FabricBlockSettings.of().mapColor(MapColor.GOLD).sounds(BlockSoundGroup.COPPER).requiresTool().strength(5.0F, 6.0F));
     //Misc blocks
     public static final EndlessSourceBlock ENDLESS_SOURCE = new EndlessSourceBlock(FabricBlockSettings.of().mapColor(MapColor.PURPLE).sounds(BlockSoundGroup.COPPER).luminance(state -> 14));
+    public static final Block BOYKISSER = new Block(FabricBlockSettings.of().mapColor(MapColor.WHITE));
 
     public static void init() {
         Registry.register(Registries.BLOCK, new Identifier(GSMain.MODID, "scrap_spiremetal"), SCRAP_SPIREMETAL);
@@ -39,6 +40,8 @@ public class GSBlocks {
         Registry.register(Registries.BLOCK, new Identifier(GSMain.MODID, "temp_io"), TEMP_IO);
         Registry.register(Registries.BLOCK, new Identifier(GSMain.MODID, "temp_power_io"), TEMP_POWER_IO);
         Registry.register(Registries.BLOCK, new Identifier(GSMain.MODID, "endless_source"), ENDLESS_SOURCE);
+        Registry.register(Registries.BLOCK, new Identifier(GSMain.MODID, "boykisser"), BOYKISSER);
+
         clientBlockRendering();
     }
 
