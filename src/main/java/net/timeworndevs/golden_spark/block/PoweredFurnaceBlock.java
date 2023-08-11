@@ -33,12 +33,13 @@ public class PoweredFurnaceBlock extends AbstractFurnaceBlock {
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return checkType(type, GSBlockEntityTypes.POWERED_FURNACE_TYPE, PoweredFurnaceBlockEntity::tick);
+        //return checkType(type, GSBlockEntityTypes.POWERED_FURNACE_TYPE, PoweredFurnaceBlockEntity::tick);
+        return checkType(type, GSBlockEntityTypes.POWERED_FURNACE_TYPE, PoweredFurnaceBlockEntity::mtick);
     }
 
     protected void openScreen(World world, BlockPos pos, PlayerEntity player) {
         BlockEntity blockEntity = world.getBlockEntity(pos);
-        if (blockEntity instanceof FurnaceBlockEntity) {
+        if (blockEntity instanceof PoweredFurnaceBlockEntity) {
             player.openHandledScreen((NamedScreenHandlerFactory)blockEntity);
         }
 

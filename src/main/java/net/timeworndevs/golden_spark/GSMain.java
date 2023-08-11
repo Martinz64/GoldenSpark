@@ -18,5 +18,8 @@ public class GSMain implements ModInitializer {
 		GSItemGroups.init();
 		GSBlockEntityTypes.init();
 		GSEnergy.init();
+
+		GSGui.init();
+		GSClientGui.init();
 	}
 }
